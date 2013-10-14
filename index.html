@@ -1,22 +1,140 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Kickass Industries</title>
 
 <style>
 
+
+
 body {
-	background-color: gray;
-}
-
-.content {
 	max-width: 892px;
-	background-color: white;
 	margin: 0 auto;
+	font-family: helvetica;
 }
 
-.link {
-	float:right;
+header {
+	height: 50px;
+	width: 892px;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+	z-index: 5;
+
 }
+
+.logo {
+	margin-top: auto;
+	margin-left: 100px;
+	margin-right: 0;
+	margin-bottom: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.banner {
+	margin-top: 50px;
+}
+
+.headline {
+	max-width: 720px;
+	margin-left: -360px;
+	position: absolute;
+	top: 90px; left: 50%; bottom: 0 right: 0;
+}
+
+.topnav {
+	float:right;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-right: 40px;
+}
+
+.saying {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 24px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.quotes {
+	height: 400px;
+	width: 892px;
+}
+
+.dexter {
+	float:left;
+	max-width: 360px;
+	font-style: italic;
+	margin-left: 65px;
+	font-size: 20px;
+	letter-spacing: .08em;
+	line-height: 1.5em;
+	font-family: georgia;
+}
+
+.quotepic {
+	position: absolute;
+	border-radius: 30px;
+	border: 1px solid gray;
+
+}
+
+.name {
+	margin-left: 65px;
+	margin-top: 30px;
+	font-family: helvetica;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+.name p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.baretta {
+	float: right;
+	max-width: 360px;
+	font-style: italic;
+	font-size: 20px;
+	letter-spacing: .08em;
+	font-family: georgia;
+	line-height: 1.5em;
+	margin-right: 65px;
+}
+
+.grayname {
+	color: gray;
+	letter-spacing: 0px;
+}
+
+
+.footer {
+	height: 300px;
+	background-color: #424242;
+	
+
+}
+
+.links {
+	float: left;
+	width: 100px;
+	height: 200px;
+	line-height: 2.3em;
+	font-size: 15px;
+	margin-left: 100px;
+	color: C0C0C0;
+}
+
+.headerlink {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: 808080;
+}
+
 
 </style>
 </head>
@@ -25,64 +143,82 @@ body {
 
 <body>
 
-<div class="content">
-<header>
-<img src="logo.jpg" alt="">
-<p class="link">Tour</p>
-<p class="link">Pricing</p>
-<p class="link">Sign in</p>
-</header>
+	<header>
+		<img class="logo" src="images/logo.jpg" alt="">
+		<p class="topnav"><b>Sign in</b></p>
+		<p class="topnav"><b>Pricing</b></p>
+		<p class="topnav"><b>Tour</b></p>
+	</header>
 
-<div class="banner">
-<img src="confetti.jpg"
-</div>
+	<div class="banner">
+		<img src="images/confetti.jpg" alt="">
+		<img class="headline" src="images/headline.png" alt="">
+	</div>
 
 
-<div class="quotes">
-	<p>What people are saying...</p>
+	<div class="quotes">
+		<p class="saying"><b>What people are saying...</b></p>
 
-	<p>Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.</p>
+		<div class="dexter">
+			<p>Enter at your peril, past the vaulted door. Impossible things will happen that the world's never seen before. In Dexter's laboratory lives the smartest boy you've ever seen.</p>
 
-	<p>Dexter</p>
-	<p>Young Boy Genius</p>
+			<img class="quotepic" src="images/dexter.jpg" alt="">
 
-	<p>Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.</p>
-	<p>Baretta</p>
-	<p>New Jersey police officer</p>
-</div>
+			<div class="name">
+				<p><b>Dexter</b></p>
+				<p class="grayname">Young Boy Genius</p>
+			</div>
+		</div>
+
+		<div class="baretta">
+			<p>Don't go to bed, with no price on your head. No, no, don't do it. Fon't do the crime, if you can't do the time, yeah, don't do it. And keep your eye on the sparrow.</p>
+
+			<img  class="quotepic" src="images/baretta.jpg" alt="">	
+
+			<div class="name">
+				<p><b>Baretta</b></p>
+				<p class="grayname">New Jersey police officer</p>
+			</div>
+		</div>
+	</div>
+
 
 <div class="footer">
-Product
 
-Tour
-Pricing
-Security
-Privacy
-Terms
+	<div class="links">
+		<p class="headerlink"><b>Product</b></p>
+		<p>Tour<br>
+		Pricing<br>
+		Security<br>
+		Privacy<br>
+		Terms</p>
+	</div>
 
-Users
+	<div class="links">
+		<p class="headerlink"><b>Users</b></p>
+		<p>Sign In<br>
+		Support<br>
+		FAQs<br>
+		Stories</p>
+	</div>
+	
+	<div class="links">	
+		<p class="headerlink"><b>Company</b></p>
+		<p>About Us<br>
+		Blog<br>
+		Contact<br>
+		Press</p>
+	</div>
 
-Sign In
-Support
-FAQs
-Stories
+	<div class="links">
+		<p class="headerlink"><b>Follow</b></p>
+		<p>Facebook<br>
+		Twitter<br>
+		LinkedIn<br>
+		Vimeo<br>
+		YouTube</p>
+	</div>	
 
-Company
-
-About Us
-Blog
-Contact
-Press
-
-Follow
-
-Facebook
-Twitter
-LinkedIn
-Vimeo
-YouTube
-
-</div>
 </div>
 
 </body>
